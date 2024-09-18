@@ -1,99 +1,62 @@
-# Título do projeto
+# Lsita de Compras em Python
 
-Um parágrafo da descrição do projeto vai aqui
-
-## 🚀 Começando
-
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
-
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
+O objetivo deste projeto é criar e manipular uma lista de compras, podendo adicionar e remover itens da lista.
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+Para executar o arquivo será necessário que o usuário possua a versão mais recente do Python, que pode ser baixada [aqui](https://www.python.org/downloads/).
+
+### Execução
+
+Caso esteja utilizando VSCode ou qualquer outro editor e não possua a extenção para rodar um programa .py instalada, abra o terminal no programa e digite python ListaDeCompras.py para iniciar o programa.
+
+O programa mostrará no terminal a seguinte mensagem:
 
 ```
-Dar exemplos
+Inserir [i]
+Apagar [a]
+Visualizar [v]
+Terminar [t]
 ```
 
-### 🔧 Instalação
+Inserir [i]: ativa o loop while para inserir um ou vários intens na lista através da função adiciona_item_final(item). Após isso, digite o nome do item que deseja adicionar, caso queira sair do loop digite 0.
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+Apagar [a]: ativa a função apaga_item(). Após isso, digite o nome do item que deseja apagar e caso ele não esteja na lista, uma exeção será mostrada no terminal.
 
-Diga como essa etapa será:
+Visualizar [v]: ativa a função lista_itens(). Após isso, a função irá retornar a lista no terminal, caso ela esteja vazia o terminal mostrará uma mensagem dizendo que ela está vazia.
 
+Terminar [t]: retorna a lista no terminal e encerra o programa.
+
+As classes e métodos são: 
+
+AdicionarItem:
 ```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
+class AdicionarItem(object):
+    def adiciona_item_final(item) -> list:
+        lista.append(item)
+        return lista
 ```
 
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
+ApagarItem:
 ```
-Dar exemplos
+class ApagarItem(object):
+    def apaga_item(item) -> list:
+        item_removido = lista.remove(item)
+        return item_removido
 ```
 
-## 📦 Implantação
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
-
-## 🛠️ Construído com
-
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-## 📌 Versão
-
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+ListarItens:
+```
+class ListarItens(object):
+    def lista_itens() -> list:
+        indice = 1
+        for item in lista:
+            print(item)
+            indice += 1
+        return lista
+```
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
+* **Natan Nogueira** - *Código + Documentação* - [umdesenvolvedor](https://github.com/Natan-S-Nogueira)
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
-
-## 🎁 Expressões de gratidão
-
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
-
-
----
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
