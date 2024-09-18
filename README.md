@@ -58,5 +58,5 @@ class ListarItens(object):
 
 ## ✒️ Autores
 
-* **Natan Nogueira** - *Código + Documentação* - [umdesenvolvedor](https://github.com/Natan-S-Nogueira)
+* **Natan Nogueira** - *Código + Documentação* - [Natan Nogueira](https://github.com/Natan-S-Nogueira)
 
